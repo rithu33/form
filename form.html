@@ -1,0 +1,228 @@
+<html>
+<body>
+    <link rel="stylesheet" href="form.css">
+    <style>
+        h2{
+            text-align: center;
+            background-color: blueviolet;
+
+        }
+        fieldset {
+  background-color: #eeeeee;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+
+    </style>
+
+<h2> RK SCHOOL ADMISSION FORM </h2>
+<FORM class="a">
+   <fieldset>
+    <label for="fname"> first name </label> <br>
+    <input type="text" id="fname" name="fname"> <br>
+    <lable for="lname"> last name </lable> <br>
+    <input type="text" id="lname" name="lname"> <br>
+   </fieldset>
+</FORM>
+<h1>  personal information.</h1>
+
+    <style>
+h1{
+    text-align: center;
+    background-color: blueviolet;
+}
+    </style>
+
+<form class="bb">
+    <p> GENDER</p>
+    <input type="radio" id="male" name="male" value="male">
+    <lable for="male"> male </lable> <br>
+     <input type="radio" id="female" name="female" value="female">
+    <lable for="female"> female </lable> <br>
+    
+</form>
+<form class="cc">
+    
+    <label for="Age"> choose the age  </label> <br> 
+    <select id="Age" name="Age" size="3" > 
+        <option value="1- 5 age" > 1 to 5 age </option>
+        <option value="5-10 age"> 5-10 age</option>
+        <option value="10-17 age"> 10-17 age</option>
+        </select>
+        <input type="submit">
+        <input type="reset">
+        
+    </form> 
+    
+    <p>If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.</p>
+<form class="dd">
+    
+    <label for="Date of birth">Date of birth</label>
+    <input type="date" > <br>
+    <br><br>
+    <label for="place of birth">place of birth</label>
+    <input type="text" id="place of birth" name="place of birth"> <br>
+    <br>
+    <lable type="nationality">nationality</lable>
+    <input type="text"> <br>
+    <br><br>
+    <lable type="Religion">Religion</lable>
+    <input type="text"> <br>
+    <br><br>
+    <label for="Residential address">Residential address</label>
+    <textarea rows="5" cols="25" autofocus placeholder="your address..." wrap="hard" maxlength="40" required >
+    </textarea>
+    
+</form>
+
+<form class="ee">
+    <p> category</p>
+    <input type="checkbox" name="category" value="sc">
+  <label for="vehicle1"> sc</label><br>
+  <input type="checkbox" name="vehicle2" value="bc">
+  <label for="vehicle2"> bc</label><br>
+  <input type="checkbox" name="vehicle3" value="st" checked>
+  <label for="vehicle3">st </label><br><br>
+  <input type="submit" value="Submit"><br>
+</form>
+
+
+<form class="gg">
+    <p>language know:</p>
+  <label for="language">mother tounge:</label>
+  <select name="language" id="language">
+    <optgroup label="language">
+      <option value="tamil">tamil</option>
+      <option value="hindi">hindi</option>
+    </optgroup>
+    <optgroup label=" other language">
+      <option value="malayalam">malayalam</option>
+      <option value="telugu">telugu</option>
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<form class="ff">
+    <label for="blood group">Choose a blood group:</label>
+    <select name="blood group" id="blood group">
+      <option value="A">A</option>
+      <option value="A+">A+</option>
+      <option value="B">B</option>
+      <option value="B+">B+</option>
+      <option value="O">O</option>
+      <option value="O+">O+</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <form class="hh">
+    <label for="phone">Enter a phone number:</label><br><br>
+    <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+    <small>Format: 123-45-678</small><br><br>
+    <input type="submit">
+  </form>
+  
+<form class="kk">
+  <h3>Attach birth certificate:</h3>
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  <input type="submit">
+</form>
+
+
+<form class="ll">
+  <h3>Attach Aadhaar card file:</h3>
+  <label for="myfile">Select files:</label>
+  <input type="file" id="myfile" name="myfile" multiple><br><br>
+  <input type="submit">
+</form>
+<form class="mm">
+  <label for="city">city:</label>
+  <input type="text" id="city" name="city" dirname="city.dir">
+  <input type="submit" value="Submit">
+</form>
+  <form class="nn">
+    <label for="PIN code">PIN code:</label>
+    <input type="number" id="points" name=" PIN code" step="3">
+    <input type="submit">
+  </form>
+  <form class="oo">
+      <fieldset name="personalia">
+        <label for="father name">father name:</label>
+        <input type="text" id="fname" name="fname">
+        <label for="mother name">mother name:</label>
+        <input type="text" id="mname" name="mname">
+
+      </fieldset>
+      <br>
+      <button type="button" onclick="form.personalia.style.backgroundColor='yellow'">Change background color of fieldset</button>
+       <input type="submit">
+      </form>
+      <form class="pp">
+      <fieldset form="form1">
+        <legend>Personalia:</legend>
+        <label for="foccupation">father occupation:</label>
+        <input type="text" id="foccupation" name="foccupation" form="form1"><br><br>
+        <label for="moccupation">mother occupation:</label>
+        <input type="text" id="moccupation" name="moccupation" form="form1">
+      </fieldset>
+      </form>
+      <form class="qq">
+        <label for="img">upload passport size photo:</label>
+        <input type="file" id="img" name="img" accept="image/*">
+        <input type="submit">
+      </form>
+      <form class="rr"   method="get">
+        <label for="class">Choose the class :</label>
+        <input list="class" name="class" id="class">
+        <datalist id="class">
+          <option value="1">
+          <option value="2">
+          <option value="3">
+          <option value="4">
+          <option value="5">
+            <option value="6">
+              <option value="7">
+              <option value="8">
+              <option value="9">
+              <option value="10">
+                <option value="11">
+                  <option value="12">  
+        </datalist>
+        <input type="submit">
+      </form>
+      <form class="SS">
+        <label for="INSTRUCTION">INSTRUCTION:</label>  
+        <input type="text" id="" name="INSTRUCTION" value="complete all the details " readonly><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      
+
+      
+      
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
